@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="Back" color="primary"></ion-back-button>
+      
+    </ion-buttons>
+
+    <ion-title color="dark">Avatar</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-avatar>
+        <img src="/assets/foto-perfil-luana.jpg" />
+      </ion-avatar>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-chip color="tertiary" outline="true" *ngFor="let chip of [1,1,1,1,1]">
+
+      <ion-avatar>
+        <img src="/assets/foto-perfil-luana.jpg" />
+      </ion-avatar>
+      <ion-label color="tertiary">Default</ion-label>
+
+    </ion-chip>
+
+    <ion-list>
+      <ion-item *ngFor="let item of [1,1,1,1]">
+        
+        <ion-label>Luana Centeno</ion-label>
+        <ion-avatar slot="end">
+          <img src="/assets/foto-perfil-luana.jpg" />
+        </ion-avatar>
+
+      </ion-item>
+    </ion-list>
+
+
+</ion-content>
